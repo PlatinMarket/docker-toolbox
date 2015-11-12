@@ -7,4 +7,4 @@ thumbs.db
 /vendor
 
 # Else
-/scripts/_git_pull_all.sh
+_git_pull_all.sh
