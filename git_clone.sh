@@ -9,8 +9,8 @@ fi
 
 echo "Cloning $repository to $path."
 rm -rf $path && git clone $repository $path 2> /dev/null
-echo "# @path: $path" >> _git_pull_all.sh
-echo "# @repository: $repository" >> _git_pull_all.sh
-echo "#" >> _git_pull_all.sh
-echo "cd $path && git reset --hard && git pull" >> _git_pull_all.sh
-chmod +x _git_pull_all.sh
+echo "# @path: $path" >> /docker-toolbox/_git_pull_all.sh
+echo "# @repository: $repository" >> /docker-toolbox/_git_pull_all.sh
+echo "#" >> /docker-toolbox/_git_pull_all.sh
+echo "cd $path && git reset --hard && git pull" >> /docker-toolbox/_git_pull_all.sh
+chmod +x /docker-toolbox/_git_pull_all.sh
