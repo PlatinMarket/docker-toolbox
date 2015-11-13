@@ -6,9 +6,10 @@ if [ -z "$name" ]; then
   exit 1
 fi
 
-cat /etc/hosts | sed -n "/$name/!p" > /etc/hosts_temp 2> /dev/null
-cp /etc/hosts /etc/hosts_bak 2> /dev/null
-mv /etc/hosts_temp /etc/hosts 2> /dev/null
+cat /etc/hosts | sed -n "/$name/!p" > /etc/hosts_temp  2> /dev/null
+cp /etc/hosts /etc/hosts_bak  2> /dev/null
+cat /etc/hosts_temp > /etc/hosts  2> /dev/null
+rm /etc/hosts_temp  2> /dev/null
 
 if [ $? -eq 0 ]; then
     echo "Done"
