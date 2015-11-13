@@ -15,7 +15,6 @@ rm /etc/hosts_temp 2> /dev/null
 
 
 if [ $? -eq 0 ]; then
-    echo "Done"
     exit 0
 else
     echo "Fail"

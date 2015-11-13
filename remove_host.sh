@@ -12,7 +12,6 @@ cat /etc/hosts_temp > /etc/hosts  2> /dev/null
 rm /etc/hosts_temp  2> /dev/null
 
 if [ $? -eq 0 ]; then
-    echo "Done"
     exit 0
 else
     echo "Fail"

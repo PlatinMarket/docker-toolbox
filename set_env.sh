@@ -10,7 +10,6 @@ fi
 eval $(echo "export $key=$value")
 
 if [ $? -eq 0 ]; then
-    echo "Done"
     exit 0
 else
     echo "Fail"
